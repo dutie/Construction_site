@@ -6,6 +6,20 @@
  * Made By MaterializeCSS.com
  */
 
+body, html{
+  height: 100%;
+}
+
+.active{
+  color: #007f7f;
+}
+
+
+.nav-wrapper{
+ 
+  background-color: white !important;
+}
+
 nav ul a,
 nav .brand-logo {
   color: #444;
@@ -16,24 +30,45 @@ p {
 }
 
 .sidenav-trigger {
-  color: #26a69a;
+  color: #007f7f;
 }
 
-.parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
+
+
+#img{
+  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("../Images/Background/background_chisinau.jpg");
+
+  /* Full height */
+  height: 100%; 
+  padding-bottom: 70%;
+  margin-top: -250px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-  .parallax-container .section {
-    width: 100%;
-  }
+
+
+/* Place text in the middle of the image */
+#content {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+#taken-icons{
+  background-color: rgba(0,0,0,0.5);
+}
+
+#taken-icons .row .col-6{
+  padding:35px;
+}
 
 @media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
+
   #index-banner .section {
     top: 10%;
   }
@@ -43,15 +78,4 @@ p {
   #index-banner .section {
     top: 0;
   }
-}
-
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-  font-size: inherit;
-}
-
-footer.page-footer {
-  margin: 0;
 }
