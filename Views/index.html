@@ -8,6 +8,7 @@
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:700&display=swap" rel="stylesheet">
   <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -15,14 +16,27 @@
 </head>
 
 <body>
-  <nav class="white" role="navigation">
+  <nav class="white navbar" role="navigation">
     <div class="nav-wrapper">
 
 
       <ul id="navbar-links" class="left hide-on-med-and-down">
         <li><a href="#" class="navbar-brand"><img src="../Images/Logo/logo - ok-2.png" height="50" alt="logo"> </a></li>
         <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">Services</a></li>
+        
+        <li class="nav-item dropdown">
+            <a class="nav-item dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Services
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="renovatie.html">Renoveren</a>
+              <a class="dropdown-item" href="sanitair.html">Sanitair</a>
+              <a class="dropdown-item" href="el.html">El</a>
+              <a class="dropdown-item" href="roofing_isolatie.html">Roofing</a>
+              <a class="dropdown-item" href="vloer.html">Tegels</a>
+              <a class="dropdown-item" href="dak.html">Dak</a>
+            </div>
+          </li>
         <li><a href="#">Contact</a></li>
         <li><a href="#">About</a></li>
       </ul>
@@ -47,29 +61,53 @@
       <div id="taken-icons" class="col-md-5">
         <div class="row row-eq-height">
           <div class="col-6">
-            <!--Renovatie-->
+            <a href="renovatie.html">
+              <!--Renovatie-->
               <i class="fas fa-paint-roller fa-2x"></i>
+              <h4>Renoveren</h4>
               <hr class="bg-white">
+            </a>
           </div>
-          <div class="col-6">            
+          <div class="col-6">
             <!--Sanitair-->
+            <a href="sanitair.html">
               <i class="fas fa-shower fa-2x"></i>
+              <h4>Sanitair</h4>
+              <hr class="bg-white">
+            </a>
           </div>
           <div class="col-6">
-              <!--Elektriciteit-->
+            <!--Elektriciteit-->
+            <a href="el.html">
               <i class="fas fa-bolt fa-2x"></i>
+              <h4>Elektriciteit </h4>
+              <hr class="bg-white">
+            </a>
           </div>
+
           <div class="col-6">
-              <!--Roofing + isolatie-->
+            <!--Roofing + isolatie-->
+            <a href="roofing_isolatie.html">
               <i class="fas fa-layer-group fa-2x"></i>
+              <h4>Roofing + Isolatie</h4>
+              <hr class="bg-white">
+            </a>
           </div>
           <div class="col-6">
-              <!--Vloer-->
+            <!--Vloer-->
+            <a href="vloer.html">
               <i class="fab fa-microsoft fa-2x"></i>
+              <h4>Vloer</h4>
+              <hr class="bg-white">
+            </a>
           </div>
           <div class="col-6">
-              <!--Dak-->
-              <i class="fas fa-angle-up fa-3x"></i>
+            <!--Dak-->
+            <a href="dak.html">
+              <i class="fas fa-angle-up fa-2x"></i>
+              <h4>Dak</h4>
+              <hr class="bg-white">
+            </a>
           </div>
 
         </div>

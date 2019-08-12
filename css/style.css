@@ -6,17 +6,23 @@
  * Made By MaterializeCSS.com
  */
 
-body, html{
+body,
+html {
   height: 100%;
+  font-family: 'Oswald', sans-serif;
 }
 
-.active{
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.active {
   color: #007f7f;
 }
 
 
-.nav-wrapper{
- 
+.nav-wrapper {
+
   background-color: white !important;
 }
 
@@ -35,12 +41,12 @@ p {
 
 
 
-#img{
-  
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("../Images/Background/background_chisinau.jpg");
+#img {
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Images/Background/background_chisinau.jpg");
 
   /* Full height */
-  height: 100%; 
+  height: 100%;
   padding-bottom: 70%;
   margin-top: -250px;
   background-position: top;
@@ -59,13 +65,256 @@ p {
   color: white;
 }
 
-#taken-icons{
-  background-color: rgba(0,0,0,0.5);
+#content #intro {
+  margin-top: 150px;
 }
 
-#taken-icons .row .col-6{
-  padding:35px;
+#taken-icons {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 25px;
 }
+
+#taken-icons .row .col-6 {
+  padding: 20px;
+}
+
+#taken-icons .row .col-6 a {
+  color: white;
+  text-decoration: none;
+
+}
+
+#taken-icons .row .col-6:nth-child(1) a:hover {
+  color: #007f7f;
+}
+
+#taken-icons .row .col-6:nth-child(2) a:hover {
+  color: #59A6E9;
+
+}
+
+#taken-icons .row .col-6:nth-child(3) a:hover {
+  color: yellow;
+
+}
+
+#taken-icons .row .col-6:nth-child(4) a:hover {
+  color: #ff007f;
+
+}
+
+#taken-icons .row .col-6:nth-child(5) a:hover {
+  color: green;
+
+}
+
+#taken-icons .row .col-6:nth-child(6) a:hover {
+  color: #9d6055;
+
+}
+
+
+#taken-icons .row .col-6 h4 {
+  padding-top: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/*
+* Services
+*/
+
+.serviceTitle {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.before_after {
+  width: 1000px;
+  height: 1000px;
+}
+
+.before_after div {
+  margin: 0.5%;
+  width: 50%;
+  height: 50%;
+  overflow: hidden;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.before_div {
+
+  background-image: url(../Images/Renovations/before_bathroom_1.jpg);
+  animation: slideBefore 30s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.after_div {
+  background-image: url(../Images/Renovations/after_bathroom_1.png);
+
+  animation: slideAfter 30s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes slideBefore {
+  0% {
+    background-image: url(../Images/Renovations/before_bathroom_2.png);
+  }
+
+  16.6% {
+    background-image: url(../Images/Renovations/before_bathroom_2.png);
+  }
+
+  19.9% {
+    background-image: url(../Images/Renovations/before_bedroom_1.png);
+  }
+
+  36.5% {
+    background-image: url(../Images/Renovations/before_bedroom_1.png);
+  }
+
+  39.8% {
+    background-image: url(../Images/Renovations/before_kitchen_1.png);
+  }
+
+  56.4% {
+    background-image: url(../Images/Renovations/before_kitchen_1.png);
+  }
+
+  59.7% {
+    background-image: url(../Images/Renovations/before_room_1.png);
+  }
+
+  76.3% {
+    background-image: url(../Images/Renovations/before_room_1.png);
+  }
+
+  79.6% {
+    background-image: url(../Images/Renovations/before_bathroom_1.jpg);
+  }
+
+  96.2% {
+    background-image: url(../Images/Renovations/before_bathroom_1.jpg);
+  }
+}
+
+@keyframes slideAfter {
+  0% {
+    background-image: url(../Images/Renovations/after_bathroom_2.png);
+  }
+
+  16.6% {
+    background-image: url(../Images/Renovations/after_bathroom_2.png);
+  }
+
+  19.9% {
+    background-image: url(../Images/Renovations/after_bedroom_1.png);
+  }
+
+  36.5% {
+    background-image: url(../Images/Renovations/after_bedroom_1.png);
+  }
+
+  39.8% {
+    background-image: url(../Images/Renovations/after_kitchen_1.png);
+  }
+
+  56.4% {
+    background-image: url(../Images/Renovations/after_kitchen_1.png);
+  }
+
+  59.7% {
+    background-image: url(../Images/Renovations/after_room_1.png);
+  }
+
+  76.3% {
+    background-image: url(../Images/Renovations/after_room_1.png);
+  }
+
+  79.6% {
+    background-image: url(../Images/Renovations/after_bathroom_1.png);
+  }
+
+  96.2% {
+    background-image: url(../Images/Renovations/after_bathroom_1.png);
+  }
+}
+
+#allImages div img {
+  width: 500px;
+  height: 500px;
+  margin: 0;
+}
+
+#image_01 {
+  visibility: hidden;
+}
+
+#image_02 {
+  visibility: hidden;
+}
+
+#image_03 {
+  visibility: hidden;
+}
+
+#image_04 {
+  visibility: hidden;
+}
+
+#image_05 {
+  visibility: hidden;
+}
+
+#image_06 {
+  visibility: hidden;
+}
+
+#image_07 {
+  visibility: hidden;
+}
+
+.slideUp {
+  animation-name: slideUp;
+  -webkit-animation-name: slideUp;
+
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+
+  animation-timing-function: ease;
+
+  visibility: visible !important;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+  }
+
+  50% {
+    transform: translateY(-8%);
+  }
+
+  65% {
+    transform: translateY(4%);
+  }
+
+  80% {
+    transform: translateY(-4%);
+  }
+
+  95% {
+    transform: translateY(2%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
 
 @media only screen and (max-width : 992px) {
 
